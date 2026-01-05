@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Genarator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logoQR.png" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
 </head>
 <body>
-    <img src="logoQR.png" alt="">
+    <img class="logo" src="logoQR.png" alt="">
+    <div class="errorDisplay">
+        <img src="error.png" alt="" class="errorImg">
+    </div>
+    <div class="container">
+        <p>Enter your text or URL</p>
+        <input id="inputTxt" type="text" placeholder="Text or URL">
+        <div class="imgBox">
+            <img id="qrImage" src="" alt="">
+            
+        </div>
+        <button id="btn" >Genrate QR Code</button>
+    </div>
+    <footer>
+        <p>Handcrafted with ❤️ in New Jersey. &copy; AliRaza Qureshi <span id="year"></span></p>
+        <div class="links">
+            <a href="https://github.com/AliRezaQureshi"><i class="ri-github-fill"></i></a>
+            <a href="https://x.com/alirezaqureshi"><i class="ri-twitter-x-line"></i></a>
+            <a href="https://www.instagram.com/alirazaqureshioffical/"><i class="ri-instagram-fill"></i></a>
+            <a href="https://www.tiktok.com/@alirazaqureshioffical?lang=en"><i class="ri-tiktok-fill"></i></a>
+        </div>
+        
+        
+    </footer>
 
     <script src="script.js"></script>
 </body>
